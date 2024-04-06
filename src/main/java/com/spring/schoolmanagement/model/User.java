@@ -1,5 +1,7 @@
 package com.spring.schoolmanagement.model;
 
+import com.spring.schoolmanagement.enums.UserRole;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,4 +24,6 @@ public class User {
 	private String email;
 	
 	private String password;
+	
+	private UserRole role;
 }
